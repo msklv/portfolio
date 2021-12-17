@@ -11,7 +11,7 @@ class MyDocument extends Document {
       title: 'Михаил Соколов - RTE - Scrum Master & DevOps',
       description: 'Краткая информация обо мне и ссылки на социальные сети',
       image:
-        'https://assets.vercel.com/image/upload/q_auto/front/vercel/dps.png'
+        'https://sokolov.im/_next/image?url=%2Fimages%2F20201115.jpg'
     }
 
     return (
