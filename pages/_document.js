@@ -11,7 +11,7 @@ class MyDocument extends Document {
       title: 'Михаил Соколов - RTE - Scrum Master & DevOps',
       description: 'Краткая информация обо мне и ссылки на социальные сети',
       image:
-        'https://sokolov.im/_next/image?url=%2Fimages%2F20201115.jpg'
+        'https://sokolov.im/images/IMG_20190108_045144_279.jpg'
     }
 
     return (
