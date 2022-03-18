@@ -55,7 +55,7 @@ OpenAuto – это открытая платформа обмена аппар�
 
 
 <Image
-  src="/images/20190322_224559-animation.gif"
+  src="/images/20190322_224559-ANIMATION.gif"
   alt="CERN Mobili-T-Hack в Женеве - Михаил Соколов"
   width={768}
   height={1024}
@@ -69,7 +69,7 @@ OpenAuto – это открытая платформа обмена аппар�
 
 
 <Image
-  src="/images/20190323_094757-animation.gif"
+  src="/images/20190323_094757-ANIMATION.gif"
   alt="CERN Mobili-T-Hack в Женеве - Михаил Соколов"
   width={768}
   height={1024}
