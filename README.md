@@ -7,7 +7,7 @@
 
 ## Hosting and DevOps
  - https://vercel.com/dashboard
- 
+
 
 ## Clone Repo  
 ```bash
@@ -18,7 +18,7 @@
 
 ## Start Develop  
 ```bash
-yarn dev
+ yarn dev
 ```
 
 
