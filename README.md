@@ -23,7 +23,6 @@
 
 
 ## Configuration
-
 1. Name in `theme.config.js` or change the footer.
 1. Name and site URL for the RSS feed in `scripts/gen-rss.js`.
 1. Meta tags in `pages/_document.js`.
