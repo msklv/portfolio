@@ -9,9 +9,9 @@ class MyDocument extends Document {
   render() {
     const meta = {
       title: 'Михаил Соколов - RTE & DevOps',
-      description: 'Краткая информация обо мне и ссылки на социальные сети',
+      description: 'Краткая информация обо мне, сертификаты, кейсы и ссылки на социальные сети',
       image:
-        'https://sokolov.im/images/IMG_20190108_045144_279.jpg'
+        'https://sokolov.im/images/michael-sokolov-agile-days.jpeg'
     }
 
     return (
@@ -23,8 +23,6 @@ class MyDocument extends Document {
           <meta property="og:description" content={meta.description} />
           <meta property="og:title" content={meta.title}/>
           <meta property="og:image" content={meta.image} />
-          <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:site" content="@yourname" />
           <meta name="twitter:title" content={meta.title} />
           <meta name="twitter:description" content={meta.description} />
           <meta name="twitter:image" content={meta.image} />
