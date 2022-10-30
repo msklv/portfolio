@@ -1,5 +1,5 @@
 ---
-title: Открытый практикум Azure DevOps 
+title: Открытый практикум по Azure DevOps 
 date: 2019/12/12
 description: Практикум для 200 слушателей на площадке Rebrainme
 tag: workshop, devops 
@@ -8,11 +8,11 @@ author: You
 
 import Image from 'next/image'
 
-# Открытый практикум Azure DevOps 
+# Открытый практикум по Azure DevOps 
 ## О мероприятии
  - Площадка - Rebrainme 
  - Аудитория -  200 слушателей
- - [Видео (нет в публисном доступе)](https://lk.rebrainme.com/devops/open-devops/video/125)
+ - [Видео (нет в публичном доступе)](https://lk.rebrainme.com/devops/open-devops/video/125)
 <Image
   src="/images/screendevops.png"
   alt="Открытый практикум Azure DevOps - Михаил Соколов"
