@@ -6,5 +6,5 @@ tag: work, mamagement, SAFe, agile
 author: You
 ---
 
-# Markdown Examples
-
+# Запуск платформенного ART из 8+8 команд по Data Governance
+Кейс в процессе написания

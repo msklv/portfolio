@@ -1,7 +1,7 @@
 ---
-title: Azure DevOps
+title: Открытый практикум Azure DevOps 
 date: 2019/12/12
-description: Открытый практикум для 200 слушателей
+description: Практикум для 200 слушателей на площадке Rebrainme
 tag: workshop, devops 
 author: You
 ---

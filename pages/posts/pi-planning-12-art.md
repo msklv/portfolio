@@ -6,5 +6,5 @@ tag: work, mamagement, SAFe, agile
 author: You
 ---
 
-# Markdown Examples
-
+# Соорганизация PI Planning на 12 ART's
+Кейс в процессе написания
