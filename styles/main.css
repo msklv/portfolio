@@ -63,3 +63,9 @@ img.next-image {
 .nav-line .nav-link {
   color: #69778c;
 }
+
+/* Added for customization */
+
+img.logo {
+  border-radius:100%
+}
