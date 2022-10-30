@@ -1,7 +1,7 @@
 ---
 title: CERN School of Computing 2014 в University of Minho
 date: 2014/09/06
-description: Статья в журнале Virgin Connect обо мне
+description: Описание летней школы CSC 2014
 tag: work, University, Minho, Cern,
 author: You
 ---
@@ -20,8 +20,6 @@ The School is open to postgraduate students and research workers with a few year
 
 Participation to the school is for the entire programme. It is not possible to register or participate at one theme only.
 
-## Diploma
-The students having successfully passed the examination and followed the entire programme will receive the CSC diploma. It will be handed over at the closing session. Students who followed the entire programme but did not successfully pass the final exam can receive a certificate of attendance.
 
 ## Programme Highlight
 ### Data Technologies

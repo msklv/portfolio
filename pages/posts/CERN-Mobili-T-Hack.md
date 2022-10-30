@@ -1,15 +1,14 @@
 ---
 title: CERN Mobili-T-Hack в Женеве
 date: 2019/03/24
-description: Статья в журнале Virgin Connect обо мне
+description: Статья в журнале Virgin Connect
 tag: work, hackathon, Geneve, Cern
 author: You
 ---
 import Image from 'next/image'
 
 
-# CERN Mobili-T-Hack в Женеве
-### Virgin Connect Jurnal
+# Статья в журнале Virgin Connect про участие в CERN Mobili-T-Hack в Женеве
 
 *Михаил Соколов*, старший системный администратор ЦУС из Нижнего Новгорода принял участие в международной конференции CERN Mobili-T-Hack в Женеве в марте 2019 года. Это двухдневное мероприятие, которое фокусируется на пересечении цифровых технологий и урбанизации. 
 
