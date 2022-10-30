@@ -78,7 +78,8 @@ OpenAuto – это открытая платформа обмена аппар�
 
 Желаем Михаилу удачи и дальнейшего профессионального развития!​
 
-
+## Ссылки
 - [CERN Mobili-T-Hack](https://indico.cern.ch/event/791709/registrations/participants), Simulation of traffic, 2019, команда победила в номинации
+- [Trafic du CERN - GitHub](https://github.com/msklv/HackTraficCERN)
 
 
