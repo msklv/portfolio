@@ -48,8 +48,8 @@ The Physics Computing theme focuses on informatics topics specific to HEP. After
 <Image
   src="/images/photo_cern_csc_2014.jpg"
   alt="CERN School of Computing 2014"
-  width={}
-  height={}
+  width={1280}
+  height={685}
   priority
   className="next-image"
 />
