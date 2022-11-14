@@ -8,8 +8,8 @@ class MyDocument extends Document {
 
   render() {
     const meta = {
-      title: 'Михаил Соколов - RTE & DevOps',
-      description: 'Краткая информация обо мне, сертификаты, кейсы и ссылки на социальные сети',
+      title: 'Михаил Соколов - Agile Coach & DevOps',
+      description: 'Краткая информация обо мне, сертификаты, кейсы и ссылки на соц. сети',
       image:
         'https://sokolov.im/images/michael-sokolov-agile-days.jpeg'
     }
