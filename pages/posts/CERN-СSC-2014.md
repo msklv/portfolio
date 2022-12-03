@@ -33,24 +33,10 @@ The Physics Computing theme focuses on informatics topics specific to HEP. After
 
 
 ## Participants list and Bios
-<Image
-  src="/images/sokolov-michael-cern-2014.png"
-  alt="CERN School of Computing 2014 - Михаил Соколов"
-  width={1024}
-  height={255}
-  priority
-  className="next-image"
-/>
+
 
 ## Photo
-<Image
-  src="/images/photo_cern_csc_2014.jpg"
-  alt="CERN School of Computing 2014"
-  width={1280}
-  height={685}
-  priority
-  className="next-image"
-/>
+
 
 ## Links
  - [CERN School of Computing](https://indico.cern.ch/event/298406/). Computer science. Portugal, 2014
