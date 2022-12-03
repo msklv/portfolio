@@ -13,9 +13,15 @@ import Image from 'next/image'
  - Площадка - Rebrainme 
  - Аудитория -  200 слушателей
  - [Видео (нет в публичном доступе)](https://lk.rebrainme.com/devops/open-devops/video/125)
-
-
-
+ 
+<Image	
+  src="/images/screendevops.png"	
+  alt="Открытый практикум Azure DevOps - Михаил Соколов"	
+  width={1200}	
+  height={489}	
+  priority	
+  className="next-image"	
+/>
 
 
 ## Plan of Azure DevOps meeting
