@@ -13,20 +13,13 @@
 ```bash
  git clone https://github.com/msklv/portfolio.git
  cd portfolio
- yarn install
+ yarn
 ```
 
 ## Start Develop  
 ```bash
  yarn dev
 ```
-
-
-## Configuration
-1. Name in `theme.config.js` or change the footer.
-1. Name and site URL for the RSS feed in `scripts/gen-rss.js`.
-1. Meta tags in `pages/_document.js`.
-1. Posts inside `pages/posts/*.md` with your own content.
 
 
 ## Acknowledgements
