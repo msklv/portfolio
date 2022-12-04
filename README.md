@@ -21,6 +21,11 @@
  yarn dev
 ```
 
+## Upgrade
+```bash
+ yarn upgrade-interactive --latest
+```
+
 
 ## Acknowledgements
 This portfolio is built with **Next.js** and a library called [Nextra](https://nextra.vercel.app/).
