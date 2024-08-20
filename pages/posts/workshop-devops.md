@@ -58,7 +58,6 @@ import Image from 'next/image'
  - Разворачиваем свой NodeJS проект в Azure DevOps.
  - Сравнение с GitLab и цены.
  - Разбираем составные части Azure DevOps
- - Деплоим приложение и осваиваем ресурсы
 
 
 
