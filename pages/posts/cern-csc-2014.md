@@ -16,6 +16,7 @@ The 37th CERN School of Computing will be held in Braga, Portugal from Monday 25
 The school will be organized by CERN in collaboration with the University of Minho and LIP.
 
 ## Participation
+
 The School is open to postgraduate students and research workers with a few years' experience in elementary particle physics, in computing, in engineering or in related fields. The number of participants is limited to 60 students. Participation is open to all nationalities coming from any country.
 
 Participation to the school is for the entire programme. It is not possible to register or participate at one theme only.

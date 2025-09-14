@@ -1,15 +1,13 @@
-# Sokolov.im 
+# Sokolov.im
 
 ## URL
 
- - https://sokolov.im/
- - https://michael.sokolov.im/
-
+- <https://sokolov.im/>
+- <https://michael.sokolov.im/>
 
 ## Hosting and Deployment
 
- - https://vercel.com/dashboard
-
+- https://vercel.com/dashboard
 
 ## Start Development
 
@@ -20,14 +18,12 @@
  yarn dev
 ```
 
-#### Upgrade Dependencies
+### Upgrade Dependencies
 
 ```bash
  yarn upgrade-interactive --latest
 ```
 
-
 ## Acknowledgements
 
 This portfolio is built with **Next.js** and a library called [Nextra](https://nextra.vercel.app/).
-
