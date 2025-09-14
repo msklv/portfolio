@@ -49,8 +49,8 @@ import Image from 'next/image'
 
 ## Services
 
-- http://devops.azure.com/
-- https://hub.docker.com/
+- [Azure DevOps](http://devops.azure.com/)
+- [Docker Hub](https://hub.docker.com/)
 
 ## Что будет на практикуме?
 
@@ -64,9 +64,9 @@ import Image from 'next/image'
 
 ## Azure DevOps vs
 
-- <https://about.gitlab.com/devops-tools/>
-- <https://about.gitlab.com/devops-tools/azure-devops-vs-gitlab.html>
-- <https://docs.microsoft.com/en-us/azure/devops/learn/compare/azure-devops-vs-gitlab>
+- [GitLab DevOps Tools](https://about.gitlab.com/devops-tools/)
+- [Azure DevOps vs GitLab – GitLab](https://about.gitlab.com/devops-tools/azure-devops-vs-gitlab.html)
+- [Azure DevOps vs GitLab – Microsoft Docs](https://docs.microsoft.com/en-us/azure/devops/learn/compare/azure-devops-vs-gitlab)
 
 ## Кто ведет?
 
