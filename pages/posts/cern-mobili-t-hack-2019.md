@@ -2,7 +2,7 @@
 title: CERN Mobili-T-Hack в Женеве
 date: 2019/03/24
 description: Статья в журнале Virgin Connect
-tag: work, hackathon, Geneve, Cern
+tag: hackathon, science
 author: You
 ---
 import Image from 'next/image'

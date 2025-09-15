@@ -2,7 +2,7 @@
 title: Разработка прототипа системы документирования сети
 date: 2019/3/18
 description: Быстрая разработка на заказ прототипа системы 
-tag: monitoring, development, management
+tag: devops, development
 author: You
 ---
 

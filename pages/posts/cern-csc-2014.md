@@ -2,7 +2,7 @@
 title: CERN School of Computing 2014 в University of Minho
 date: 2014/09/06
 description: Описание летней школы CSC 2014
-tag: work, University, Minho, Cern,
+tag: science
 author: You
 ---
 import Image from 'next/image'
