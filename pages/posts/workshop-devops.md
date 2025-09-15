@@ -8,9 +8,9 @@ author: You
 
 import Image from 'next/image'
 
-# Открытый практикум по Azure DevOps
+## Открытый практикум по Azure DevOps
 
-## О мероприятии
+### О мероприятии
 
 - Площадка - Rebrainme
 - Аудитория -  200 слушателей
@@ -25,7 +25,7 @@ import Image from 'next/image'
   className="next-image"
 />
 
-## Plan of Azure DevOps meeting
+### Plan of Azure DevOps meeting
 
 - About me
 - Create quick NodeJS App
@@ -40,35 +40,35 @@ import Image from 'next/image'
 - Write docker image at docker hub
 - Questions
 
-## Software
+### Software
 
 - Windows 10
 - Visual Studio Code
 - GitHub Desktop for Windows
 - Docker Desktop for Windows
 
-## Services
+### Services
 
 - [Azure DevOps](http://devops.azure.com/)
 - [Docker Hub](https://hub.docker.com/)
 
-## Что будет на практикуме?
+### Что будет на практикуме?
 
 - Разворачиваем свой NodeJS проект в Azure DevOps.
 - Сравнение с GitLab и цены.
 - Разбираем составные части Azure DevOps
 
-## Price
+### Price
 
 - [Azure DevOps Pricing](https://azure.microsoft.com/en-us/pricing/details/devops/azure-devops-services/)
 
-## Azure DevOps vs
+### Azure DevOps vs
 
 - [GitLab DevOps Tools](https://about.gitlab.com/devops-tools/)
 - [Azure DevOps vs GitLab – GitLab](https://about.gitlab.com/devops-tools/azure-devops-vs-gitlab.html)
 - [Azure DevOps vs GitLab – Microsoft Docs](https://docs.microsoft.com/en-us/azure/devops/learn/compare/azure-devops-vs-gitlab)
 
-## Кто ведет?
+### Кто ведет?
 
 Михаил Соколов - основатель RDB24 (rdb24.com) и действующий PM и DevOps-инженер.
 Опыт в более 10 лет. Работал в Европе. Учился в CERN.
