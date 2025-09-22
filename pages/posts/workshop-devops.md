@@ -2,7 +2,7 @@
 title: Открытый практикум по Azure DevOps 
 date: 2019/12/12
 description: Практикум для 200 слушателей на площадке Rebrainme
-tag: workshop, devops 
+tag: workshop, devops, speech
 author: You
 ---
 
