@@ -10,9 +10,8 @@ Hosting is provided by Vercel.
 ### Setup
 ```bash
 yarn                           # Install dependencies
-yarn build                      # Build the project (runs gen-rss.js + Next.js build)
-yarn dev                        # Start development server
-yarn upgrade-interactive --latest    # Upgrade dependencies interactively
+yarn build                     # Build the project (runs gen-rss.js + Next.js build)
+yarn dev                       # Start development server
 ```
 
 ### Testing & Validation
