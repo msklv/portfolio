@@ -14,7 +14,81 @@
   font-named-instance: 'Italic';
 }
 
+/*
+ * Design tokens. `--tw-prose-*` are consumed directly by the theme's
+ * compiled Tailwind Typography CSS (`.nx-prose`), so redefining them here
+ * re-themes article body copy in light mode for free. Dark mode is NOT
+ * variable-driven in this theme (nextra-theme-blog@2 bakes a separate
+ * `dark:nx-prose-dark` variant with hardcoded hex colors at build time),
+ * so dark article typography is overridden explicitly further down.
+ */
+:root {
+  color-scheme: light;
+
+  --bg: #faf9f6;
+  --bg-elevated: #ffffff;
+  --fg: #1c1b19;
+  --fg-muted: #6f6b62;
+  --fg-faint: #9a968c;
+  --accent: #ac431f;
+  --accent-hover: #8a3518;
+  --border: #e6e1d7;
+  --code-bg: #f1ede3;
+  --code-fg: #302d27;
+  --selection-bg: #f3ddb8;
+
+  --tw-prose-body: var(--fg);
+  --tw-prose-headings: var(--fg);
+  --tw-prose-lead: var(--fg-muted);
+  --tw-prose-links: var(--fg);
+  --tw-prose-bold: var(--fg);
+  --tw-prose-counters: var(--fg-muted);
+  --tw-prose-bullets: var(--fg-faint);
+  --tw-prose-hr: var(--border);
+  --tw-prose-quotes: var(--fg);
+  --tw-prose-quote-borders: var(--accent);
+  --tw-prose-captions: var(--fg-muted);
+  --tw-prose-code: var(--code-fg);
+  --tw-prose-pre-bg: var(--code-bg);
+  --tw-prose-pre-code: var(--code-fg);
+  --tw-prose-th-borders: var(--border);
+  --tw-prose-td-borders: var(--border);
+}
+
+html.dark {
+  color-scheme: dark;
+
+  --bg: #17160f;
+  --bg-elevated: #1e1c15;
+  --fg: #ece8dc;
+  --fg-muted: #a8a396;
+  --fg-faint: #716c5f;
+  --accent: #e28a5f;
+  --accent-hover: #ee9d76;
+  --border: #322f24;
+  --code-bg: #1f1d15;
+  --code-fg: #ece8dc;
+  --selection-bg: #4a3a1c;
+
+  --tw-prose-pre-bg: var(--code-bg);
+  --tw-prose-pre-code: var(--code-fg);
+}
+
+* {
+  border-color: var(--border);
+}
+
+::selection {
+  background: var(--selection-bg);
+}
+
+html {
+  background: var(--bg);
+}
+
 body {
+  background: var(--bg);
+  color: var(--fg);
   font-family: 'Inter var', system-ui, -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
     'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
@@ -24,7 +98,9 @@ body {
   font-variation-settings: 'wght' 450;
   font-variant: common-ligatures contextual;
   letter-spacing: -0.02em;
+  transition: background-color 0.15s ease;
 }
+
 b,
 strong,
 h3,
@@ -52,22 +128,190 @@ details summary {
   cursor: pointer;
 }
 
-/* 
-img.next-image {
-  margin: 0; 
+/*
+ * The theme's `article.nx-container` ships with no horizontal margin or
+ * padding at any breakpoint, so on wide viewports content pins to the
+ * left edge instead of centering, and on narrow ones text touches the
+ * screen edges. Fix layout here rather than in the theme.
+ */
+#__next > article.nx-container {
+  margin-inline: auto;
+  padding-inline: 1.25rem;
 }
-*/
-
-.prose a {
-  color: #0074de;
+@media screen and (min-width: 640px) {
+  #__next > article.nx-container {
+    padding-inline: 2rem;
+  }
 }
 
-.nav-line .nav-link {
-  color: #69778c;
+/* Typography rhythm inside article content */
+.nx-prose {
+  font-size: 1.0625rem;
+  line-height: 1.75;
+}
+.nx-prose h1 {
+  margin-bottom: 0.4em;
+  letter-spacing: -0.015em;
+}
+.nx-prose h2,
+.nx-prose h3 {
+  margin-top: 2.5em;
+}
+.nx-prose a {
+  text-decoration-color: var(--border);
+  text-underline-offset: 3px;
+  transition: color 0.15s ease, text-decoration-color 0.15s ease;
+}
+.nx-prose a:hover {
+  color: var(--accent);
+  text-decoration-color: var(--accent);
+}
+.nx-prose code {
+  background: var(--code-bg);
+  border-radius: 4px;
+  padding: 0.15em 0.4em;
+  font-weight: 500;
+}
+.nx-prose pre code {
+  background: none;
+  padding: 0;
 }
 
-/* Added for customization */
+/* Dark-mode article overrides — the theme's dark:nx-prose-dark variant
+   hardcodes its own hex colors rather than consuming CSS variables, so it
+   has to be overridden directly rather than via tokens above. */
+html.dark .nx-prose h1,
+html.dark .nx-prose h2,
+html.dark .nx-prose h3,
+html.dark .nx-prose h4 {
+  color: var(--fg);
+}
+html.dark .nx-prose a {
+  color: var(--fg);
+  text-decoration-color: var(--border);
+}
+html.dark .nx-prose a:hover {
+  color: var(--accent);
+  text-decoration-color: var(--accent);
+}
+html.dark .nx-prose strong {
+  color: var(--fg);
+}
+html.dark .nx-prose blockquote {
+  color: var(--fg-muted);
+  border-left-color: var(--accent);
+}
+html.dark .nx-prose hr {
+  border-color: var(--border);
+}
+html.dark .nx-prose li::marker {
+  color: var(--fg-faint);
+}
+html.dark .nx-prose code {
+  color: var(--code-fg);
+  background: var(--code-bg);
+}
+
+/* Subheading permalink markers */
+.subheading-anchor:after {
+  color: var(--fg-faint) !important;
+}
+.subheading-anchor:hover:after {
+  color: var(--accent) !important;
+}
+
+/* Nav (auto-generated from top-level pages) */
+.nx-prose > div.nx-mb-8 a {
+  color: var(--fg-muted);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+.nx-prose > div.nx-mb-8 a:hover {
+  color: var(--accent);
+}
+.nx-prose > div.nx-mb-8 span.nx-cursor-default {
+  color: var(--fg) !important;
+  font-variation-settings: 'wght' 650;
+}
+
+/* Muted meta text (dates, captions, "Read more") reused across pages */
+.nx-text-gray-400,
+.nx-text-gray-300,
+.nx-text-gray-500 {
+  color: var(--fg-muted) !important;
+}
+html.dark .dark\:nx-text-gray-300,
+html.dark .dark\:nx-text-gray-400 {
+  color: var(--fg-muted) !important;
+}
+
+/* Tag chips */
+a.nx-bg-gray-200 {
+  background: var(--bg-elevated);
+  color: var(--fg-muted) !important;
+  border: 1px solid var(--border);
+}
+a.nx-bg-gray-200:hover {
+  background: var(--bg-elevated);
+  color: var(--accent) !important;
+  border-color: var(--accent);
+}
+html.dark a.dark\:nx-bg-gray-600 {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  color: var(--fg-muted) !important;
+}
+html.dark a.dark\:nx-bg-gray-600:hover {
+  color: var(--accent) !important;
+  border-color: var(--accent);
+}
+
+/* Post list */
+.post-item {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--border);
+}
+.post-item:first-of-type {
+  padding-top: 0.5rem;
+}
+.post-item h3 {
+  margin: 0 0 0.35em;
+}
+.post-item h3 a {
+  text-decoration: none;
+}
+.post-item h3 a:hover {
+  color: var(--accent);
+}
+.post-item time {
+  display: block;
+  margin-top: 0.5rem;
+}
+.post-item-more {
+  color: var(--fg-muted);
+  text-decoration: none;
+  white-space: nowrap;
+}
+.post-item-more:hover {
+  color: var(--accent);
+}
+
+/* Dark mode toggle */
+[aria-label='Toggle Dark Mode'] {
+  color: var(--fg-muted);
+  transition: color 0.15s ease;
+}
+[aria-label='Toggle Dark Mode']:hover {
+  color: var(--accent);
+}
 
 img.logo {
-  border-radius:100%
+  border-radius: 100%;
+  border: 1px solid var(--border);
+}
+
+@media screen and (max-width: 480px) {
+  .nx-prose {
+    font-size: 1rem;
+  }
 }
