@@ -76,3 +76,8 @@ img.next-image {
 img.logo {
   border-radius:100%
 }
+
+/* скрываем мету «• N min read» на страницах блога/темы */
+div.x\:mb-8.x\:flex.x\:gap-3 {
+  display: none;
+}
