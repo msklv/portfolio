@@ -1,0 +1,23 @@
+name: security-scan
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  schedule:
+    - cron: "12 12 * * 1"
+  workflow_dispatch:
+
+jobs:
+  osv-scan:
+    name: Dependency audit (osv-scanner / OSV.dev)
+    permissions:
+      actions: read
+      security-events: write
+      contents: read
+    uses: google/osv-scanner-action/.github/workflows/osv-scanner-reusable.yml@v2.5.1
+    with:
+      scan-args: |-
+        --include-git-root
+        -r
+        ./

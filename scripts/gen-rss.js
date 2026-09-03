@@ -10,23 +10,24 @@ async function generate() {
     feed_url: 'https://sokolov.im/feed.xml'
   })
 
-  const posts = await fs.readdir(path.join(__dirname, '..', 'pages', 'posts'))
+  const posts = await fs.readdir(path.join(__dirname, '..', 'app', 'posts'))
 
   await Promise.all(
     posts.map(async (name) => {
-      if (name.startsWith('index.')) return
+      if (name.startsWith('index.') || name.startsWith('.')) return
+      if (/\.(jsx?|mdx?)$/.test(name)) return
 
       const content = await fs.readFile(
-        path.join(__dirname, '..', 'pages', 'posts', name)
+        path.join(__dirname, '..', 'app', 'posts', name, 'page.mdx')
       )
       const frontmatter = matter(content)
 
       feed.item({
         title: frontmatter.data.title,
-        url: '/posts/' + name.replace(/\.mdx?/, ''),
+        url: '/posts/' + name,
         date: frontmatter.data.date,
         description: frontmatter.data.description,
-        categories: frontmatter.data.tag.split(', '),
+        categories: frontmatter.data.tags ?? frontmatter.data.tag,
         author: frontmatter.data.author
       })
     })
